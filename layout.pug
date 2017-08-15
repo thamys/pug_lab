@@ -1,0 +1,19 @@
+extends node_modules/pug_bootstrap/layouts/_carousel.pug
+
+include src/mixins.pug
+
+block body
+    .navbar-wrapper
+		.container
+            +navbar-fixed("Business Name","main-navbar")
+                mixin navbar-item(name, link)
+                    - var link = (typeof link === 'undefined') ? "#" : link
+                    li
+                        a(href=link)= name
+                +navbar-item("Home")
+                +navbar-item("Services")
+                +navbar-item("About")
+                +navbar-item("Portifolio")
+                +navbar-item("Testimonials")
+                +navbar-item("Contact")
+    block content
