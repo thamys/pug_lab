@@ -26,6 +26,8 @@
   "homepage": "https://github.com/thamys/pug_lab#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
+    "less": "^2.7.2",
+    "less-cli": "^1.0.0",
     "pug": "^2.0.0-rc.3",
     "pug-bootstrap": "0.0.15",
     "pug-cli": "^1.0.0-alpha6"
