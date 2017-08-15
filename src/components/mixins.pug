@@ -1,0 +1,13 @@
+mixin box-text(icon, title, text)
+    .media
+        .media-left
+            a(href='#')
+                i.fa(class="fa-" + icon)
+        .media-body
+            h4.media-heading= title
+            | #{text}
+
+mixin section-title(title, text)
+    .section-title
+        h2= title
+        p= text

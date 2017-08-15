@@ -1,19 +1,17 @@
-extends node_modules/pug_bootstrap/layouts/_carousel.pug
-
-include src/mixins.pug
+extends node_modules/pug-bootstrap/_bootstrap.pug
+include src/components/mixins.pug
 
 block body
     .navbar-wrapper
-		.container
+        .container
             +navbar-fixed("Business Name","main-navbar")
-                mixin navbar-item(name, link)
-                    - var link = (typeof link === 'undefined') ? "#" : link
-                    li
-                        a(href=link)= name
-                +navbar-item("Home")
-                +navbar-item("Services")
-                +navbar-item("About")
-                +navbar-item("Portifolio")
-                +navbar-item("Testimonials")
-                +navbar-item("Contact")
+                +nav_item("#") Home
+                +nav_item("#") Services
+                +nav_item("#") About
+                +nav_item("#") Portifolio
+                +nav_item("#") Testimonials
+                +nav_item("#") Contact
     block content
+append scripts
+    script(src="https://use.fontawesome.com/699336bbda.js")
+    
