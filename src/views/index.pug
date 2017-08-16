@@ -1,39 +1,65 @@
 extends ../../layout.pug
 
 block content
-  +carousel("myCarousel",[{image:"../images/carousel1.jpg",h1:"Simple,Fresh & Unique Design",p:"Donec posuere augue venenatis",button:{caption:"Show More",url:"#"}},{image:"../images/carousel2.jpg",h1:"Another example headline",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Learn more",url:"#"}},	{image:"../images/carousel3.jpg",h1:"One more for good measure.",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Browse gallery",url:"#"}}])
+  // Carousel
+  // ==================================================
+  +carousel("myCarousel",[{image:"http://lorempixel.com/1920/650/city",h1:"Simple,Fresh & Unique Design",p:"Donec posuere augue venenatis",button:{caption:"Show More",url:"#"}},{image:"http://lorempixel.com/1920/650/city",h1:"Another example headline",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Learn more",url:"#"}},	{image:"http://lorempixel.com/1920/650/city",h1:"One more for good measure.",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Browse gallery",url:"#"}}])
 
   section#whatWeOffer
     .container
       +section-title("What we offer", "Vestibulum elementum ex ullamcorper ligula vulputate")
-
-      +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-      +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-      +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-      +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-      +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-      +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
+      #services
+        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
+        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
+        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
+        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
+        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
+        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
   section#whoWeAre
-    .container-fuid
-      .row
-        .col-md-6.col-md-offset-6
-          h2 Who we are
-          p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui massa, condimentum a nisl quis, tristique efficitur erat. Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.
+    .col-md-6.col-md-offset-6
+      .text
+        h2 Who we are
+        p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dui massa, condimentum a nisl quis, tristique efficitur erat. Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.
 
-          p Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.
+        p Aenean ut suscipit urna. Donec efficitur tristique lobortis. Nullam eu efficitur lacus, et blandit tellus. Mauris viverra condimentum tellus vitae sollicitudin. Mauris quis mattis urna. Suspendisse auctor magna quis ipsum ultrices scelerisque. Vestibulum quis hendrerit enim. Aenean viverra aliquam ex, sed ornare risus porta in.
 
-          +a-btn("#")
-            | Read More
-    section#seeOurWork
-      .container-fuid
-        .container
-          +section-title("See our work", "Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.")
+        +a-btn("#")
+          | Read More
+  section#seeOurWork
+    .container
+      +section-title("See our work", "Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.")
 
-        .portifolio
-          .container
-            +tab-pills-list(["All", "Web", "Logo Design", "Wordpress", "E-commerce"])
-          // Imagens aqui
-    
-    section#testimonialss
-      .container
-        +section-title("Testimonials", "Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.")
+      +tab-pills-list(["All", "Web", "Logo Design", "Wordpress", "E-commerce"], 0)
+
+    .container-fluid
+      // Imagens aqui
+      - 
+        var types = [
+          "animals",
+          "business",
+          "cats",
+          "city",
+          "food",
+          "nightlife",
+          "fashion",
+          "people",
+          "nature",
+          "sports",
+          "technics",
+          "transport",
+        ]
+      ul.list-unstyled.list-images
+        each val, key in types
+          li
+            a(href="#")
+              img(src="http://lorempixel.com/400/250/" + val)
+
+
+  
+  section#testimonialss
+    .container
+      +section-title("Testimonials", "Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.")
+
+      +testimonial("Jon Doe", ", Company Inc.", '“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”')
+      
+      +testimonial("Jon Doe", ", Company Inc.", '“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”')

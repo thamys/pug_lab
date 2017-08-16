@@ -11,3 +11,11 @@ mixin section-title(title, text)
     .section-title
         h2= title
         p= text
+
+mixin testimonial(name, company, text)
+    blockquote
+        p= text
+        footer
+            i.fa.fa-user
+            cite(title=name)= name
+            | #{company}

@@ -1,6 +1,10 @@
 extends node_modules/pug-bootstrap/_bootstrap.pug
 include src/components/mixins.pug
 
+append styles
+    link(rel="stylesheet", href="assets/css/home.css")
+    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet")
+
 block body
     .navbar-wrapper
         .container
