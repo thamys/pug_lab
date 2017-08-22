@@ -1,8 +1,8 @@
-
 var express = require('express');
-var app = express();
+var app = module.exports = express();
 var expressLess = require('express-less');
 var pug = require('pug');
+
 
 app.set('views', './src/views')
 app.set('view engine', 'pug')

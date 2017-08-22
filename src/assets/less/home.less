@@ -10,19 +10,115 @@ body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
 }
-.footer {
+
+.navbar-default{
+	.navbar-brand{
+		font-family: 'Pacifico', cursive;
+		color: #FFC154;
+		font-size: 28px;
+	}
+}
+footer {
   position: absolute;
   bottom: 0;
-  width: 100%;
+	width: 100%;
   /* Set the fixed height of the footer here */
-  height: 60px;
-  background-color: #f5f5f5;
+	height: 0;
+	.footer{
+		background-color: #273a43;
+		color: #c4c4c4;
+		padding: 30px 0 0;
+		.title{
+			color: #fff;
+		}
+		.foot{
+			background-color: #172227;
+			padding: 15px 0;
+			margin-top: 20px;
+			.container{
+				display: -ms-flexbox;
+				display: -webkit-flex;
+				display: flex;
+				-webkit-flex-direction: row;
+				-ms-flex-direction: row;
+				flex-direction: row;
+				-webkit-flex-wrap: wrap;
+				-ms-flex-wrap: wrap;
+				flex-wrap: wrap;
+				-webkit-justify-content: space-between;
+				-ms-flex-pack: justify;
+				justify-content: space-between;
+				-webkit-align-content: center;
+				-ms-flex-line-pack: center;
+				align-content: center;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+				align-items: center;
+				.copy, .author, .social-medias{
+					flex: 33%;
+				}
+				.author{
+					text-align: center;
+				}
+				.social-medias{
+					ul{
+						list-style: none;
+						display: -ms-flexbox;
+						display: -webkit-flex;
+						display: flex;
+						-webkit-flex-direction: row;
+						-ms-flex-direction: row;
+						flex-direction: row;
+						-webkit-flex-wrap: wrap;
+						-ms-flex-wrap: wrap;
+						flex-wrap: wrap;
+						-webkit-justify-content: flex-end;
+						-ms-flex-pack: end;
+						justify-content: flex-end;
+						-webkit-align-content: center;
+						-ms-flex-line-pack: center;
+						align-content: center;
+						-webkit-align-items: center;
+						-ms-flex-align: center;
+						align-items: center;
+						li{
+							padding: 5px 3px;
+							a{
+								background-color: #2c3b42;
+								color: #fff;
+								padding: 5px 7px;
+								
+								&.twitter:hover{
+									background-color: #71b6d5;
+								}
+								&.facebook{
+									padding: 5px 10px;
+									&:hover{
+										background-color: #71b6d5;
+									}
+								}
+								&.linkedin:hover{
+									background-color: #71b6d5;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
 }
 
 /* Common styles */
 nav.navbar-default{
 	background: transparent;
 	border: none;
+	&.navbar-fixed-top{
+		background-color: rgba(0,0,0,0.6);
+		li > a{
+			color: #fff;
+		}
+	}
 	.navbar-nav{
 		float: right;
 	}
@@ -45,3 +141,4 @@ section{
 @import "_who-we-are.less";
 @import "_what-we-offer.less";
 @import "_see-our-work.less";
+@import "_testimonials.less";
