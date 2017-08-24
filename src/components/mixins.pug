@@ -28,7 +28,7 @@ mixin section-title(title, text)
 mixin testimonial(name, company, text)
     blockquote
         p= text
-        footer
+        .footer
             i.fa.fa-user
             cite(title=name)= name
             | #{company}
