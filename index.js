@@ -8,6 +8,7 @@ app.set('views', './src/views')
 app.set('view engine', 'pug')
 
 app.use('/assets/css', expressLess(__dirname + '/src/assets/less', { compress: true }));
+app.use('/assets/img', express.static(__dirname + '/src/assets/img'));
 
 app.get('/', function(req, res) {
   res.render('index', { title: 'Hey', message: 'Hello there!' })

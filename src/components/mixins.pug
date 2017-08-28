@@ -1,4 +1,4 @@
-mixin box-text(icon, title, text)
+mixin hightlight(icon, title, text)
     .media
         .media-left
             a(href='#')
@@ -22,12 +22,18 @@ mixin box-media-icon(icon, title, position, alignment)
 
 mixin section-title(title, text)
     .section-title
-        h2= title
-        p= text
+        .title
+            h2= title
+            .underlines
+                .line
+                i.fa.fa-heart
+                .line
+        .subtitle
+            p= text
 
 mixin testimonial(name, company, text)
     blockquote
-        p= text
+        p.text= text
         .footer
             i.fa.fa-user
             cite(title=name)= name

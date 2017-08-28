@@ -1,3 +1,7 @@
+@base_color: #709dca;
+@contrast_color: #ffc155;
+@text_color: #062033;
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -14,7 +18,7 @@ body {
 .navbar-default{
 	.navbar-brand{
 		font-family: 'Pacifico', cursive;
-		color: #FFC154;
+		color: @contrast_color;
 		font-size: 28px;
 	}
 }
@@ -133,6 +137,22 @@ section{
 			color: #709dca;
 			font-weight: 800;
 			font-size: 26px;
+			margin-bottom: 0;
+		}
+		.underlines{
+			display: inline-flex;
+			align-items: center;
+			margin-bottom: 20px;
+			i.fa{
+				color: @contrast_color;
+				margin: 0 10px;
+			}
+			.line{
+				width: 100px;
+				height: 2px;
+				background-color: @contrast_color;
+				margin-top: -2px;
+			}
 		}
 	}
 }

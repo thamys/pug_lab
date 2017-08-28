@@ -3,18 +3,16 @@ extends ../components/layout.pug
 block content
   // Carousel
   // ==================================================
-  +carousel("myCarousel",[{image:"http://lorempixel.com/1920/780/city",h1:"Simple,Fresh & Unique Design",p:"Donec posuere augue venenatis",button:{caption:"Show More",url:"#"}},{image:"http://lorempixel.com/1920/780/city",h1:"Another example headline",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Learn more",url:"#"}},	{image:"http://lorempixel.com/1920/780/city",h1:"One more for good measure.",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Browse gallery",url:"#"}}])
+  +carousel("myCarousel",[{image:"/assets/img/banner-1.png",h1:"Simple,Fresh & Unique Design",p:"Donec posuere augue venenatis",button:{caption:"Show More",url:"#"}},{image:"/assets/img/banner-2.png",h1:"Another example headline",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Learn more",url:"#"}},	{image:"/assets/img/banner-1.png",h1:"One more for good measure.",p:"Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.",button:{caption:"Browse gallery",url:"#"}}])
 
   section#whatWeOffer
     .container
       +section-title("What we offer", "Vestibulum elementum ex ullamcorper ligula vulputate")
       #services
-        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-        +box-text("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
+        - var qtdHightLits = 6
+        while qtdHightLits > 0
+          +hightlight("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
+          - qtdHightLits --
   section#whoWeAre
     .col-md-6.col-md-offset-6
       .text
@@ -33,26 +31,11 @@ block content
 
     .container-fluid
       // Imagens aqui
-      - 
-        var types = [
-          "animals",
-          "business",
-          "cats",
-          "city",
-          "food",
-          "nightlife",
-          "fashion",
-          "people",
-          "nature",
-          "sports",
-          "technics",
-          "transport",
-        ]
       ul.list-unstyled.list-images
-        each val, key in types
+        each val in [1,2,3,4,5,6,7,8]
           li
             a(href="#")
-              img.img-responsive(src="http://lorempixel.com/500/300/" + val)
+              img.img-responsive(src="/assets/img/work-" + val + ".png")
 
 
   
@@ -60,5 +43,7 @@ block content
     .container
       +section-title("Testimonials", "Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.")
       .testimonials
-        +testimonial("Jon Doe", ", Company Inc.", '“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”')
-        +testimonial("Jon Doe", ", Company Inc.", '“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”')
+        - var qtdTestimonials = 2
+        while qtdTestimonials > 0
+          +testimonial("Jon Doe", ", Company Inc.", '“Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consec tetur, adipisci velit, sed quia non numquam eius modi tempora incidunt utis labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minimas veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid amet untras vel illum qui.”')
+          - qtdTestimonials --

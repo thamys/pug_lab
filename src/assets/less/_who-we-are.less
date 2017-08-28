@@ -1,9 +1,10 @@
 section#whoWeAre {
-	height: 350px;
+	height: 500px;
 	overflow: hidden;
-	background-image: url("http://lorempixel.com/1920/600/nature");
+	background-image: url("../img/who-we-are.png");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: 51% auto;
+	background-position: left center;
 
 	 display: -ms-flexbox;
     display: -webkit-flex;
@@ -26,7 +27,7 @@ section#whoWeAre {
 	
 	> div{
 		background-color: #ffc155;
-		padding: 30px;
+		padding: 30px 50px;
 
 		display: -ms-flexbox;
 		display: -webkit-flex;
@@ -49,11 +50,23 @@ section#whoWeAre {
 		.text{
 			vertical-align: center;
 			color: #fff;
+			font-weight: 100;
+
+			h2{
+				text-transform: uppercase;
+				margin-bottom: 50px;
+			}
+
+			p{
+				line-height: 26px;
+				margin-bottom: 30px;
+			}
 
 			a.btn{
 				background-color: #e7ad48;
 				border: 1px solid #cb8d21;
 				color: #fff;
+				text-transform: uppercase;
 			}
 		}
 	}
