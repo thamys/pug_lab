@@ -3,9 +3,6 @@ include mixins.pug
 
 append styles
     link(rel="stylesheet", href="assets/css/home.css")
-    link(href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800" rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet")
 
 block body
     .navbar-wrapper
@@ -47,7 +44,8 @@ block body
                         .form-group
                             .input-group                   
                                 +input-simple("text","input-newsletter",{placeholder: "Seu melhor e-mail", name: "email"})
-                                .input-group-btn Submit
+                                .input-group-btn 
+                                    button.btn.btn-primary Submit
             .foot
                 .container
                     span.copy © 2015 Business name.All rights reserved.
@@ -60,6 +58,3 @@ block body
                                 li
                                     a(href="#",class=val)
                                         i.fa(class="fa-" + val)
-
-append scripts
-    script(src="https://use.fontawesome.com/699336bbda.js")

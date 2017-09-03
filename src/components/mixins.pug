@@ -1,4 +1,4 @@
-mixin hightlight(icon, title, text)
+mixin highlight(icon, title, text)
     .media
         .media-left
             a(href='#')
@@ -20,13 +20,13 @@ mixin box-media-icon(icon, title, position, alignment)
             block
 
 
-mixin section-title(title, text)
+mixin section-title(title, text, icon)
     .section-title
         .title
             h2= title
             .underlines
                 .line
-                i.fa.fa-heart
+                i.fa(class="fa-"+ icon)
                 .line
         .subtitle
             p= text

@@ -7,12 +7,11 @@ block content
 
   section#whatWeOffer
     .container
-      +section-title("What we offer", "Vestibulum elementum ex ullamcorper ligula vulputate")
+      +section-title("What we offer", "Vestibulum elementum ex ullamcorper ligula vulputate", "code")
       #services
-        - var qtdHightLits = 6
-        while qtdHightLits > 0
-          +hightlight("heart", "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
-          - qtdHightLits --
+        - var icons = ['wrench', 'film','life-buoy', 'paper-plane-o', 'bicycle', 'heart-o']
+        each icon in icons
+          +highlight(icon, "Vivamus tincidunt", "Fusce velit magna, rutrum id pellentesque in, imperdiet rutrum neque. Vestibulum elementum ex ullamcorper ligula vulputate, non malesuada nisi ullamcorper. Curabitur tellus ligula, laoreet vitae lectus vitae")
   section#whoWeAre
     .col-md-6.col-md-offset-6
       .text
@@ -25,7 +24,7 @@ block content
           | Read More
   section#seeOurWork
     .container
-      +section-title("See our work", "Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.")
+      +section-title("See our work", "Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.", "cog")
 
       +tab-pills-list(["All", "Web", "Logo Design", "Wordpress", "E-commerce"], 0)
 
@@ -41,7 +40,7 @@ block content
   
   section#testimonials
     .container
-      +section-title("Testimonials", "Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.")
+      +section-title("Testimonials", "Mauris euismod ac nulla vitae fermentum. Morbi ut mauris massa. Sed condimentum elit volutpat turpis sagittis, in scelerisque dui luctus. Nulla id suscipit velit, a maximus massa.", "comments-o")
       .testimonials
         - var qtdTestimonials = 2
         while qtdTestimonials > 0
