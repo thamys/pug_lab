@@ -1,0 +1,38 @@
+{
+  "name": "pug_lab",
+  "version": "1.0.0",
+  "description": "Just a simple project to show how pug works",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thamys/pug_lab.git"
+  },
+  "keywords": [
+    "pug",
+    "pug.js",
+    "jade",
+    "html",
+    "template",
+    "engine"
+  ],
+  "author": "Thamyres Guedes (https://github.com/thamys)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thamys/pug_lab/issues"
+  },
+  "homepage": "https://github.com/thamys/pug_lab#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.4",
+    "express-hot-loader": "0.0.1",
+    "express-less": "^0.1.0",
+    "less": "^2.7.2",
+    "less-cli": "^1.0.0",
+    "pug": "^2.0.0-rc.3",
+    "pug-bootstrap": "0.0.15",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
