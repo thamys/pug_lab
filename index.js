@@ -12,7 +12,7 @@ app.use('/assets/img', express.static(__dirname + '/src/assets/img'));
 app.use('/assets/fonts', express.static(__dirname + '/src/assets/fonts'));
 
 app.get('/', function(req, res) {
-  res.render('index', { title: 'Hey', message: 'Hello there!' })
+  res.render('index', { title: 'Pug - Hands ON', message:{title: 'Olá Mundo!', message: 'Esse é um template BEM SIMPLES, só para servir de base para o nosso laboratório de Pug. Se você está lendo essa mensagem é porque todas as dependencias estão rodando. Parabéns!'}})
 });
 
 app.listen(3000, function () {
