@@ -34,5 +34,8 @@
     "pug": "^2.0.0-rc.3",
     "pug-bootstrap": "0.0.15",
     "pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "start": "nodemon index.js"
   }
 }
